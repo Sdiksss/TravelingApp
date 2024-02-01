@@ -1,0 +1,15 @@
+.reservation__container {
+    padding: 3em;
+    gap: 15px;
+}
+.reservation__card {
+    gap: 3em;
+    width: 100%;
+
+   
+    display: flex;
+}
+
+.reservation__h2 {
+    padding: 0 0 1em 0;
+}

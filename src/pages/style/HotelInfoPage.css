@@ -1,0 +1,33 @@
+.HotelInfo__header{
+    display: grid;
+    justify-content: center;
+}
+
+.HotelInfo__div-img {
+    width: 50%;
+    max-width: 500px;
+    height: 50%;
+}
+
+.HotelInfo__img {
+    width: 100%;
+    height: 100%;
+}
+
+.HotelInfo__div-map {
+    width: 50%;
+    max-width: 500px;
+    height: 50%;
+    margin: 1em;
+}
+
+.HotelInfo__map-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0 0 3em;
+}
+
+.HotelInfo__container {
+    padding: 3em;
+}

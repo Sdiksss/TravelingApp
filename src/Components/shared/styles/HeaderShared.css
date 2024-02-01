@@ -1,0 +1,48 @@
+.header__shared {
+    background-color: rgb(255, 244, 223);
+    z-index: 2;
+    padding: 0.5em 1em 0.1em;
+}
+
+
+.header__shared-h1 {
+    font-family: cursive;
+    color: red;
+    font-weight: 1000;
+}
+.header__shared-ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.header__shared-li-left {
+    margin-right: auto;
+    background-color: red;
+    border-radius: 0.5em;
+    padding: 0.2em 0.4em;
+}
+
+.header__shared-li-left-text {
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.header__shared-li-right {
+    display: flex;
+    margin-left: auto;
+    gap: 2em;
+    border-radius: 1em;
+}
+
+.header__shared-li-r-text{
+    margin-right: auto;
+    background-color: red;
+    border-radius: 0.5em;
+    padding: 0.2em 0.4em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
