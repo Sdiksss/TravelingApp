@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 
 const FilterCities = () => {
 
-    const url = "https://hotels-api.academlo.tech/cities"
+    const url = "https://hotel-app-backend-1.onrender.com/cities"
     const [cities, getCities] = useFetch(url)
 
     useEffect(() => {
@@ -17,9 +17,9 @@ const FilterCities = () => {
     console.log(cities)
 
     const handleFilterCities = (id) => {
-        let url = "https://hotels-api.academlo.tech/hotels"
+        let url = "https://hotel-app-backend-1.onrender.com/hotels"
         if(id !== "all cities"){
-            url = `https://hotels-api.academlo.tech/hotels?cityId=${id}`
+            url = `https://hotel-app-backend-1.onrender.com/hotels?cityId=${id}`
     
         }
         dispatch(getHotelsThunk(url))

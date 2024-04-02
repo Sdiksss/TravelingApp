@@ -24,14 +24,14 @@ const HomePage = () => {
     const dispatch = useDispatch()
 
     useEffect ( () => {
-        const url = "https://hotels-api.academlo.tech/hotels"
+        const url = "https://hotel-app-backend-1.onrender.com/hotels"
         dispatch(getHotelsThunk(url))
 
     }, [])
 
   
 
-    const hotelsFiltered = hotels?.results.filter( hotelInfo => {
+    const hotelsFiltered = hotels?.filter( hotelInfo => {
       //Filter name
       const filterName = hotelInfo.name.toLowerCase().includes(nameInput)
 

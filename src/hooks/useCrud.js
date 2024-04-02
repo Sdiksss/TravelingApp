@@ -5,7 +5,7 @@ import getConfigToken from "../services/getConfigToken"
 const useCrud = () => {
    const [response, setResponse] = useState()
 
-   const baseUrl = "https://hotels-api.academlo.tech"
+   const baseUrl = "https://hotel-app-backend-1.onrender.com"
 
    //GET
    const getApi = (path) => {

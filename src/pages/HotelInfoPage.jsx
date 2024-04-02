@@ -6,13 +6,14 @@ import OtherHotels from '../Components/HotelInfoPage/OtherHotels'
 import Reservation from '../Components/HotelInfoPage/Reservation'
 import SliderImgs from '../Components/HotelInfoPage/SliderImgs'
 import "../pages/style/HotelInfoPage.css"
+import CommetsSection from '../Components/HotelInfoPage/CommetsSection'
 
 
 const HotelInfoPage = () => {
 
     const {id} = useParams()
 
-    const url = `https://hotels-api.academlo.tech/hotels/${id}`
+    const url = `https://hotel-app-backend-1.onrender.com/hotels/${id}`
     const [hotel, getHotel] = useFetch(url)
 
     useEffect(() => {
@@ -60,6 +61,9 @@ const HotelInfoPage = () => {
      </div>
     </div>
      </div>
+     <CommetsSection
+      hotelId={hotel?.id}/>
+
      <Reservation
      hotelId={hotel?.id}/>
      <OtherHotels 

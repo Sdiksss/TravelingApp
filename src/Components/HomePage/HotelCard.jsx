@@ -8,7 +8,7 @@ const HotelCard = ({hotel}) => {
   const navigate = useNavigate()
 
   const handleNavigate = () => {
-    navigate(`/hotel/${hotel.id}`)
+    navigate(`/hotels/${hotel.id}`)  //ojo hotel
     }
 
   return (

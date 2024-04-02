@@ -3,7 +3,7 @@ import GetDaysFromDates from '../../services/GetDaysFromDates'
 import useCrud from '../../hooks/useCrud'
 import "../ReservationPage/ReserveCard.css"
 
-const ReserveCard = ({reserve, deleteReservation}) => {
+const ReserveCard = ({reserve, deleteReservation, setReserveSelected}) => {
 
     console.log(reserve)
 
@@ -11,6 +11,10 @@ const ReserveCard = ({reserve, deleteReservation}) => {
     
     const handleDelete = () => {
         deleteReservation("/bookings", reserve.id)
+    }
+
+    const handleReviews = () => {
+        setReserveSelected(reserve)
     }
 
 
@@ -22,6 +26,9 @@ const ReserveCard = ({reserve, deleteReservation}) => {
         <section className='reserver__section'>
             <h3>{reserve.hotel.name}</h3>
             <div>{reserve.hotel.city.name}, {reserve.hotel.city.country}</div>
+            
+            <div onClick={handleReviews} className='reserve__rating'  >Rate andd comment this visit...</div>
+
             <div>
                 <span>Reservations days:</span>
                  <span>{reservationsDays}</span> 

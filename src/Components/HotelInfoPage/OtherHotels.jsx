@@ -4,7 +4,7 @@ import HotelCard from '../HomePage/HotelCard'
 
 const OtherHotels = ({ cityId, hotelId}) => {
 
-    const url = `https://hotels-api.academlo.tech/hotels?cityId=${cityId}`
+    const url = `https://hotel-app-backend-1.onrender.com/hotels?cityId=${cityId}`
 
     const [hotels, getHotels] = useFetch(url)
 
@@ -19,10 +19,10 @@ const OtherHotels = ({ cityId, hotelId}) => {
 
   return (
     <div>
-        <h2>Other Hotels in {hotels?.results[0].city.name}</h2>
+        <h2>Other Hotels in {hotels?.[0].city.name}</h2>
         <div className='card-container'>
             {
-                hotels?.results.filter(hotelsInfo => hotelsInfo.id !== hotelId).map( hotelsInfo => (
+                hotels?.filter(hotelsInfo => hotelsInfo.id !== hotelId).map( hotelsInfo => (
                     <HotelCard 
                     key={hotelsInfo.id}
                     hotel={hotelsInfo}/>

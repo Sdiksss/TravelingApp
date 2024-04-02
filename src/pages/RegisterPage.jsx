@@ -44,9 +44,9 @@ const RegisterPage = () => {
         <label className="register__label">
           <span className="register__form-span" >Gender</span>
         <select className="register__form-input" {...register("gender")} >
-          <option value="male">male</option>
-          <option value="female">female</option>
-          <option value="other">prefer not say</option>
+          <option value="male">MALE</option>
+          <option value="female">FEMALE</option>
+          <option value="other">OTHER</option>
         </select>
         </label>
         <button className='register__btn'>Submit</button>

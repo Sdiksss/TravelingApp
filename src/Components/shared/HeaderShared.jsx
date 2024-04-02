@@ -4,7 +4,7 @@ import "../shared/styles/HeaderShared.css"
 const HeaderShared = () => {
   return (
     <header className='header__shared'>
-        <h1><Link to= "/" className='header__shared-h1'>BookingApp</Link></h1>
+        <h1><Link to= "/" className='header__shared-h1'>TravelingApp</Link></h1>
         <nav className='header__shared-nav'>
             <ul className='header__shared-ul' >  
                 <li className='header__shared-li-left'><Link className='header__shared-li-left-text' to="/reservations">Reservation</Link></li>
